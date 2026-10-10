@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern & Design Fusion Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+
+     
+   
+</head>
+<body>
+
+   
+    <nav class="fixed top-0 left-0 right-0 dark-bg bg-opacity-95 shadow-lg backdrop-blur-sm z-50 border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="text-3xl font-bold accent-text unique-title">
+                        PATTERN:LAB
+                    </a>
+                </div>
+                
+
+                <div class="hidden md:flex md:space-x-6 lg:space-x-10 items-center">
+                    <a href="#about" class="text-sm font-medium text-gray-300 hover:text-white transition duration-300">About</a>
+                    <a href="#tools" class="text-sm font-medium text-gray-300 hover:text-white transition duration-300">Tools</a>
+                    <a href="#fabrics" class="text-sm font-medium text-gray-300 hover:text-white transition duration-300">Fabrics</a>
+                    <a href="#ideas" class="text-sm font-medium text-gray-300 hover:text-white transition duration-300">Idea Gallery</a>
+                    <a href="#content" class="text-sm font-medium text-gray-300 hover:text-white transition duration-300">Resources</a>
+
+                    <!-- Search Bar & Icons -->
+                    <div class="flex items-center space-x-4">
+                        <div class="relative hidden lg:block">
+                            <input type="search" placeholder="Search patterns..." class="py-1.5 pl-3 pr-10 rounded-full text-sm bg-gray-700 text-white border border-purple-800 focus:ring-purple-500 focus:border-purple-500 w-48">
+                            <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
+                        
+                        <!-- Sign In/Account Icon -->
+                        <button class="text-gray-300 hover:text-purple-400 p-2 rounded-full transition duration-300" aria-label="Sign In">
+                            <i data-lucide="user" class="w-5 h-5"></i>
+                        </button>
+
+                        <!-- More/Menu Icon (Cart Placeholder) -->
+                        <button class="text-gray-300 hover:text-purple-400 p-2 rounded-full transition duration-300" aria-label="More Options">
+                            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button (Icon: Menu) -->
+                <button class="md:hidden text-gray-300 hover:text-white p-2 rounded-full transition duration-300" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Message Modal (Mock) -->
+    <div id="cart-message" class="hidden fixed bottom-5 right-5 p-4 rounded-xl accent-bg text-white shadow-2xl z-50 items-center space-x-3 transition duration-300" role="alert">
+        <i data-lucide="check-circle" class="w-5 h-5"></i>
+        <span>Item added to cart!</span>
+    </div>
+
+    <!-- SECTION 1: HOME (Landing Page Content) -->
+    
+    <section id="home" class="bg-black pt-16 border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+            <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-4 text-white unique-title" style="animation: pulse-light 4s infinite;">
+                The Blueprint of Style
+            </h1>
+            <p class="mt-3 text-xl md:text-2xl font-light text-gray-400 max-w-4xl mx-auto mb-8">
+                <B>Where Pattern Making meets limitless Fashion Design inspiration. Start drafting your next collection with precision and creativity.</B>
+            </p>
+            <a href="#tools" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-black bg-white hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                Start Creating
+            </a>
+
+            
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT (About Page Content) -->
+    <section id="about" class="dark-bg border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center accent-text mb-12">Our Philosophy</h2>
+            
+            <div class="lg:flex lg:items-start lg:space-x-12">
+                
+                <!-- Text Content -->
+                <div class="lg:w-1/2 space-y-6">
+                    <p class="text-lg text-gray-300">
+                        PATTERN:LAB was created by Naveena Ayeshmantha for helps and enhance the talent and students who have creative vision. Our team is a community driven by precision, innovation, and the desire to empower the next generation of designers.
+                    </p>
+                    <p class="text-lg text-gray-300">
+                        Our resources are curated to simplify complex grading, fit, and textile challenges, turning the meticulous art of pattern making into an inspiring phase of the design process.
+                    </p>
+                    <div class="pt-4 space-y-2">
+                        <p class="text-md text-white font-semibold">Connect with us:</p>
+                        <p class="text-gray-400 flex items-center"><i data-lucide="instagram" class="w-4 h-4 mr-2 accent-text"></i> <a href="https://instagram.com/patternlab_official" class="hover:text-white transition">@patternlab_official</a></p>
+                        <p class="text-gray-400 flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2 accent-text"></i> <a href="mailto:contact@patternlab.com" class="hover:text-white transition">contact@patternlab.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Image/Placeholder -->
+                <div class="lg:w-1/2 mt-8 lg:mt-0">
+                    <img class="w-full h-80 object-cover rounded-xl shadow-2xl border-4 border-purple-800" 
+                         src="s.jpg" 
+                         alt="Pattern Drafting"
+                         onerror="this.onerror=null; this.src='c:\Users\MSI\Desktop\hloww\Sewing logo Images - Free Download on Freepik.jpeg';"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TOOLS & TECHNIQUES (New Content Area 1) -->
+    <section id="tools" class="bg-gray-900 border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center accent-text mb-12">Essential Tools</h2>
+            <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto">
+                The technical foundation of every garment. Explore the essential equipment and digital techniques for flawless pattern creation.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tool Card 1 -->
+                <div class="accent-bg p-6 rounded-xl shadow-xl border border-purple-700">
+                    <div class="text-white mb-4"><i data-lucide="ruler" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Grading Rulers</h3>
+                    <p class="text-purple-200">Precise, detailed rulers for complex size adjustments. Includes metric and imperial conversions.</p>
+                    <a href="#" class="mt-4 text-sm text-white hover:text-purple-300 font-medium flex items-center">
+                        View Resources <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Tool Card 2 -->
+                <div class="dark-bg p-6 rounded-xl shadow-xl border border-purple-700">
+                    <div class="accent-text mb-4"><i data-lucide="scissors" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Specialty Scissors</h3>
+                    <p class="text-gray-400">Guides on selecting the right shears for different fabrics, from silk chiffon to heavy canvas.</p>
+                    <a href="#" class="mt-4 text-sm accent-text hover:text-white font-medium flex items-center">
+                        View Guides <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Tool Card 3 -->
+                <div class="accent-bg p-6 rounded-xl shadow-xl border border-purple-700">
+                    <div class="text-white mb-4"><i data-lucide="pen-tool" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Digital Drafting</h3>
+                    <p class="text-purple-200">Software tutorials and best practices for creating digital patterns (CAD) for efficiency.</p>
+                    <a href="#" class="mt-4 text-sm text-white hover:text-purple-300 font-medium flex items-center">
+                        Start Tutorial <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FABRIC LIBRARY (New Content Area 2) -->
+    <section id="fabrics" class="dark-bg border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center accent-text mb-12">The Fabric Library</h2>
+            <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto">
+                Understanding drape, weight, and cut is crucial. Explore how different textiles affect your pattern's final form.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Fabric 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition duration-300">
+                    <img src="silk.jpg" class="w-full h-40 object-cover" alt="Silk Chiffon Fabric">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-white">Silk Chiffon</h4>
+                        <p class="text-sm text-gray-400">Best for bias-cut, fluid patterns.</p>
+                    </div>
+                </div>
+
+                <!-- Fabric 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition duration-300">
+                    <img src="wool.jpg" class="w-full h-40 object-cover" alt="Wool Twill Fabric">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-white">Wool Twill</h4>
+                        <p class="text-sm text-gray-400">Requires firm interfacing and structure.</p>
+                    </div>
+                </div>
+
+                <!-- Fabric 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition duration-300">
+                    <img src="jersy.jpg" class="w-full h-40 object-cover" alt="Jersey Knit Fabric">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-white">Jersey Knit</h4>
+                        <p class="text-sm text-gray-400">Utilize negative ease for best fit.</p>
+                    </div>
+                </div>
+
+                <!-- Fabric 4 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.03] transition duration-300">
+                    <img src="mesh.jpg" class="w-full h-40 object-cover" alt="Technical Mesh Fabric">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-white">Technical Mesh</h4>
+                        <p class="text-sm text-gray-400">Special consideration for seam allowances.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center justify-center px-6 py-2 border border-purple-500 text-sm font-medium rounded-full text-purple-300 hover:bg-purple-900 transition duration-300">
+                    Browse Full Library <i data-lucide="library" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: IDEA GALLERY (New Content Area 3: Inspiration for FD Students) -->
+    <section id="ideas" class="bg-gray-900 border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center accent-text mb-12">Design Inspiration Gallery</h2>
+            <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto">
+                A curated selection of emerging and historical silhouettes to spark your next creative breakthrough.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative group rounded-xl overflow-hidden shadow-xl hover:shadow-purple-700/50 transition duration-300">
+                    <img src="nav.jpg" alt="Deconstructivist Silhouette" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white font-bold text-xl unique-title">Decon.</span>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl hover:shadow-purple-700/50 transition duration-300">
+                    <img src="volu.jpg" alt="Avant-Garde Volume" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white font-bold text-xl unique-title">Volume</span>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl hover:shadow-purple-700/50 transition duration-300">
+                    <img src="t.jpg" alt="Historical Tailoring" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white font-bold text-xl unique-title">Tailoring</span>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl hover:shadow-purple-700/50 transition duration-300">
+                    <img src="drap.jpg" alt="Sustainable Draping" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white font-bold text-xl unique-title">Draping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: ESSAY/CONTENT STORE (Mock E-commerce Section) -->
+    <section id="content" class="dark-bg border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center accent-text mb-12">Premium Resources</h2>
+            <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto">
+                Access professionally researched essays and detailed white papers on advanced pattern theory, historical techniques, and sustainable practices.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Resource Card 1: Essay 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-purple-700">
+                    <h3 class="text-2xl font-semibold text-white mb-2">The Art of French Darting</h3>
+                    <p class="text-gray-400 mb-4 text-sm">A comprehensive 500-word analysis of advanced dart manipulation and bodice fitting techniques.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-2xl font-bold accent-text">$9.99</span>
+                        <button onclick="addToCart('French Darting Essay')" class="flex items-center accent-bg text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition duration-300 shadow-md transform hover:scale-[1.05]">
+                            <i data-lucide="shopping-cart" class="w-4 h-4 mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resource Card 2: Essay 2 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-purple-700">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Sustainable Pattern Zero Waste</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Deep dive into cutting layouts that minimize fabric waste, complete with practical examples.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-2xl font-bold accent-text">$14.99</span>
+                        <button onclick="addToCart('Zero Waste Pattern Essay')" class="flex items-center accent-bg text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition duration-300 shadow-md transform hover:scale-[1.05]">
+                            <i data-lucide="shopping-cart" class="w-4 h-4 mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Resource Card 3: E-book -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-purple-700">
+                    <h3 class="text-2xl font-semibold text-white mb-2">The Ultimate Fit E-Book</h3>
+                    <p class="text-gray-400 mb-4 text-sm">A 50-page guide covering everything from standard blocks to complex custom fitting adjustments.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-2xl font-bold accent-text">$29.99</span>
+                        <button onclick="addToCart('Ultimate Fit E-Book')" class="flex items-center accent-bg text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition duration-300 shadow-md transform hover:scale-[1.05]">
+                            <i data-lucide="shopping-cart" class="w-4 h-4 mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT (Footer/Contact Content) -->
+    <section id="contact" class="accent-bg min-h-[30vh] py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-4xl font-bold mb-4">Collaborate With Us</h2>
+            <p class="text-xl font-light mb-8 max-w-xl mx-auto text-purple-200">
+                Have a unique pattern challenge or partnership idea? Let's connect.
+            </p>
+            
+            <form class="max-w-md mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg text-gray-800 focus:ring-white focus:border-white border-purple-400 shadow-sm" required>
+                <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg text-gray-800 focus:ring-white focus:border-white border-purple-400 shadow-sm" required>
+                <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg text-gray-800 focus:ring-white focus:border-white border-purple-400 shadow-sm" required></textarea>
+                <button type="submit" class="w-full p-3 bg-white hover:bg-gray-200 text-purple-900 font-semibold rounded-lg shadow-xl transition duration-300 transform hover:scale-[1.02] flex items-center justify-center">
+                    Send Inquiry <i data-lucide="send" class="w-4 h-4 ml-2"></i>
+                </button>
+            </form>
+
+            <div class="mt-12 pt-6 border-t border-purple-700">
+                <p class="text-sm text-purple-200">&copy; 2025 PATTERN:LAB. CRAFTED BY NAVEENA AYESHMANTHA</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+</body>
+</html>
